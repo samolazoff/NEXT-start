@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.scss";
 
+import Navbar from "./components/ui/navbar/Navbar";
+
 const fonts = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fonts.className}>{children}</body>
+      <body className={fonts.className}>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
