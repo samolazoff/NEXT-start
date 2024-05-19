@@ -1,0 +1,6 @@
+.hero{
+    @apply mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl;
+}
+.wrap{
+    @apply mb-8 flex flex-wrap justify-between md:mb-16;
+}
