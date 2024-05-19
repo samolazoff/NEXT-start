@@ -10,6 +10,24 @@
     &_left_txt{
         @apply max-w-md leading-relaxed text-gray-500 xl:text-lg;
     }
+    &_right{
+        @apply mb-12 flex w-full md:mb-16 lg:w-2/3;
+    }
+    &_right_wrap_img_first{
+        @apply relative left-12 top-12 z-10 ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0;
+    }
+    &_right_img{
+        @apply h-full w-full object-cover object-center;
+    }
+    &_right_wrap_img_second{
+        @apply  overflow-hidden rounded-lg bg-gray-100 shadow-lg;
+    }
+    &_right_title{
+        @apply mb-4 text-4xl font-bold text-balance sm:text-5xl md:mb-8
+    }
+    &_right_txt{
+        @apply max-w-md leading-relaxed text-gray-500 xl:text-lg;
+    }
 }
 .wrap{
     @apply mb-8 flex flex-wrap justify-between md:mb-16;
